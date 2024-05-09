@@ -1,0 +1,160 @@
+/* body {
+  overflow: hidden;
+} */
+/* modal */
+.modal-wrap {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  /* 수평 가운데 정렬 */
+  align-items: center;
+  /* 수직 가운데 정렬 */
+}
+
+.modal-wrap .modal {
+  width: 600px;
+  height: 450px;
+  padding: 45px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modal-wrap .modal a {
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  font-size: 20px;
+}
+
+/*   이거 다시 하자 이렇게코드짜면 망;;  */
+
+.modal-wrap .login-wrap form {
+  height: 100%;
+}
+/* 
+.modal-wrap .modal ul {
+  margin-top: 30px;
+  height: calc(100% - 75px);
+}
+
+.modal-wrap .modal ul li {
+  margin-bottom: 21px;
+}
+
+.modal-wrap .modal ul input {
+} */
+
+.modal-wrap button {
+  width: 100%;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.modal-wrap button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* 
+.modal-wrap .modal ul li span {
+  display: block;
+  margin-right: 15px;
+} */
+
+/* modal - compose/post */
+
+.modal .input-write {
+  height: calc(100% - 21px);
+  margin-top: 21px;
+  border-right: 0 none;
+  border-left: 0 none;
+}
+.modal .input-write .write {
+}
+.modal .input-write .desc form {
+  display: block;
+  height: 100%;
+}
+.modal .input-write .desc form textarea {
+  height: 88%;
+}
+.modal .input-write .desc form div.btns {
+  height: 12%;
+  display: flex;
+}
+div.input-write .desc .btns button:nth-child(1),
+.modal div.input-write .desc .btns button:nth-child(3) {
+  height: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* photo detail modal ---------------------------------*/
+.modal-wrap .modal.photo-detail {
+  width: calc(100% - 90px);
+}
+.modal-wrap .modal.photo-detail {
+  height: calc(100% - 90px);
+  border-radius: 0px;
+  padding: 0px !important;
+  display: flex;
+}
+.modal.photo-detail .s-left {
+  width: calc(100% - 280px);
+  background-color: #333;
+}
+.modal.photo-detail .s-left .photo-img {
+  width: 100%;
+  height: calc(100% - 45px);
+  /* background-size: cover;  */
+  background-position: center; /* 이미지를 가운데 정렬합니다. */
+  background-repeat: no-repeat; /* 배경 이미지를 반복하지 않습니다. */
+}
+.modal.photo-detail .s-right {
+  width: 280px;
+}
+.modal.photo-detail .btns {
+  margin-top: 0px;
+}
+.modal-wrap .modal.photo-detail a {
+  left: 12px;
+  top: 12px;
+  color: #eee;
+}
+
+.modal.photo-detail .input-write {
+  height: 120px;
+  margin-top: 0px;
+}
+/* action button */
+.modal.photo-detail .action-btns {
+  height: 36px !important;
+}
+.s-left .action-btns li svg,
+.s-left ul.action-btns li span {
+  color: #eee;
+}
+
+.modal.photo-detail .input-write .desc form textarea {
+  height: auto;
+}
+.modal.photo-detail .input-write .desc form div.btns {
+  height: 36px;
+}
+
+.modal.photo-detail .input-write {
+}
+
+.modal.photo-detail ul.content li {
+  display: flex;
+  padding: 9px;
+  border-bottom: 1px solid #eee;
+}

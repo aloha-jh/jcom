@@ -1,0 +1,685 @@
+article {
+}
+
+article ul li {
+  height: 140px;
+}
+
+/* left ------------------------------- */
+.main-1 .left-wrap .left {
+  height: 100vh;
+  padding: 12px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  /* outline: 2px solid gold; */
+}
+
+/* profile */
+.left .profile {
+  width: 100%;
+  height: 60px;
+  display: flex;
+}
+.left .profile p {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.left .profile p span,
+.left .profile p b {
+  display: block;
+  padding-left: 12px;
+}
+.btn-logout {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 6px rgba(0, 0, 1, 0.1);
+  position: absolute;
+  bottom: 80px;
+  left: 0px;
+}
+.btn-logout button {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+}
+.profile {
+  cursor: pointer;
+}
+.profile:hover {
+  background-color: #eee;
+  border-radius: 30px;
+}
+.hidden {
+  display: none;
+}
+.btn-logout button:hover {
+  background-color: #eee;
+}
+.user-img,
+.left .profile .user-img {
+  border: 1px solid #eee;
+  width: 54px;
+  height: 54px;
+  border-radius: 30px;
+  background-image: url("./kakao_1.png");
+  background-size: cover; /* 요소의 크기에 맞게 이미지를 확대 또는 축소하여 채웁니다. */
+  background-position: center; /* 이미지를 가운데 정렬합니다. */
+  background-repeat: no-repeat; /* 배경 이미지를 반복하지 않습니다. */
+}
+
+.u1 {
+  background-image: url("./hi.png");
+}
+.u2 {
+  background-image: url("./kakao_2.png");
+}
+.u3 {
+  background-image: url("./kakao_1.png");
+}
+
+/*header*/
+
+.left header h1 {
+  font-size: 20px;
+}
+.left header ul {
+  margin: 12px 0px;
+}
+.left header ul li {
+  height: 45px;
+  line-height: 45px;
+}
+
+.left header ul li a:hover {
+  background-color: #eee;
+  border-radius: 30px;
+}
+.left header ul li a {
+  padding-left: 15px;
+}
+.left header ul li.active a {
+  color: #2c92ff;
+  background-color: #eee;
+  border-radius: 30px;
+}
+
+.left header ul li a {
+  width: 100%;
+  display: block;
+  height: 100%;
+  color: #333;
+}
+.left header ul li svg {
+  margin-right: 10px;
+}
+.left header button {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+/* main > article ------------------------------- */
+article h2 {
+  width: 100%;
+  height: 30px;
+  padding-top: 12px;
+  padding-left: 12px;
+  font-weight: 600;
+}
+article > div.btns {
+  border-bottom: 1px solid #eee;
+  width: 469px;
+  position: fixed;
+}
+article div.btns {
+  /* width: 100%; */
+  height: 45px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5); /* 배경 색상 */
+  backdrop-filter: blur(5px); /* 배경 흐리게 하기 */
+  z-index: 1;
+}
+article div.btns button {
+  width: 50%;
+  height: 45px;
+  background-color: transparent;
+  color: #333;
+  padding: 0;
+}
+article div.btns button.active b {
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 3px solid #56abff;
+}
+
+ul.action-btns {
+  width: 100%;
+  display: flex;
+  height: 36px;
+  line-height: 36px;
+}
+
+/* action button */
+ul.action-btns li {
+  flex-grow: 1;
+  text-align: center;
+  border: 0 none !important;
+  cursor: pointer;
+
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.action-btns li svg,
+ul.action-btns li span {
+  color: #686868;
+}
+ul.action-btns li svg {
+  margin-right: 6px;
+}
+ul.action-btns li span {
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+ul.action-btns li.comment:hover svg,
+ul.action-btns li.comment:hover span {
+  color: #609fe2;
+}
+ul.action-btns li.comment.clicked svg,
+ul.action-btns li.comment.clicked span {
+  color: #609fe2;
+}
+
+ul.action-btns li.share:hover svg,
+ul.action-btns li.share:hover span {
+  color: #58ad66;
+}
+ul.action-btns li.share.clicked svg,
+ul.action-btns li.share.clicked span {
+  color: #58ad66;
+}
+
+ul.action-btns li.liked:hover svg,
+ul.action-btns li.liked:hover span {
+  color: #eb96a4;
+}
+ul.action-btns li.liked.clicked svg,
+ul.action-btns li.liked.clicked span {
+  color: #eb96a4;
+}
+
+article ul.content {
+}
+article ul.content li {
+  border-bottom: 1px solid #eee;
+}
+article ul.content li {
+  display: block;
+  width: 100%;
+  display: flex;
+  padding: 12px;
+  transition: background-color 0.4s ease;
+}
+
+div.input-write {
+  margin-top: 45px;
+}
+
+/* .input-write */
+div.input-write {
+  display: flex;
+  padding: 12px;
+}
+ul.content li {
+}
+ul.content li:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+div.input-write div.writer,
+ul.content li div.writer {
+  width: 60px;
+}
+div.input-write div.desc,
+ul.content li div.desc {
+  width: calc(100% - 60px);
+}
+div.input-write .desc .btns {
+  justify-content: space-between;
+  height: 36px;
+}
+div.input-write .desc .btns button {
+  width: 45px;
+  height: inherit;
+}
+div.input-write .desc .btns button:nth-child(1) {
+  background-color: transparent;
+  color: #429dfe;
+  border-radius: 30px;
+}
+div.input-write .desc .btns button:nth-child(1):hover {
+  background-color: #eee;
+}
+div.input-write .desc .btns button:nth-child(1) svg {
+  font-size: 20px;
+}
+div.input-write .desc .btns button:nth-child(3) {
+  background-color: #429dfe;
+  color: #fff;
+  width: 120px;
+  border-radius: 30px;
+}
+
+input[type="file"] {
+  display: none; /* 기본 파일 업로드 버튼을 숨김 */
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.custom-file-upload:hover {
+  background-color: #0056b3;
+}
+
+/* ul.content */
+ul.content {
+  border-top: 1px solid #eee;
+}
+
+ul.content li {
+  height: auto;
+  padding-bottom: 0px;
+}
+ul.content li .writer .user-img:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 1, 0.3);
+}
+ul.content li .desc {
+}
+ul.content li .desc > div {
+}
+ul.content li .desc > div span:hover {
+  text-decoration: underline;
+}
+ul.content li .desc > div b {
+  font-weight: 500;
+  margin-right: 9px;
+}
+ul.content li .desc > div b:hover {
+  text-decoration: underline;
+}
+ul.content li .desc > div span.time {
+  color: #686868;
+}
+ul.content li .desc > div > span {
+  color: #333;
+  margin-right: 9px;
+}
+ul.content li .desc > p {
+  margin: 12px 0px 12px 0px;
+}
+ul.content li .desc > .img-post {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  /* background-image: url("../../../public/images/1.png"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ul.content li .desc > .img-post.p2 {
+  background-image: url("../../../public/images/2.png");
+}
+ul.content li .desc > .img-post.p3 {
+  background-image: url("../../../public/images/3.png");
+}
+ul.content li .desc > .btns {
+}
+ul.content li .desc > .btns li:hover {
+  color: #7cbbff;
+}
+ul.content li .desc > .btns li:hover svg {
+}
+ul.content li .desc > .btns li:nth-child(3):hover {
+  color: #ff92a4;
+}
+/* main > aside ------------------------------- */
+aiside {
+}
+div.search {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 30px;
+  padding: 0px 12px 0px 12px;
+}
+div.search svg {
+}
+div.search input {
+  border: 0 none;
+  font-size: 15px;
+  padding-left: 12px;
+  background-color: transparent;
+  /* outline: 1px solid red; */
+}
+ul.flow,
+ul.trand {
+  background-color: #eee;
+  padding: 18px;
+  border-radius: 21px;
+  margin-top: 21px;
+}
+ul.flow h3,
+ul.trand h3 {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 21px;
+}
+ul.trand li {
+  height: 66px;
+}
+ul.trand li span {
+  font-size: 12px;
+  display: block;
+  color: #686868;
+}
+ul.trand li b {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 6px 0px 6px 0px;
+}
+
+/* -----  */
+aside ul.flow {
+}
+aside ul.flow li {
+  display: flex;
+  align-items: center;
+  padding-top: 21px;
+}
+aside ul.flow > li:nth-child(2) {
+  padding-top: 0px;
+}
+aside ul.flow li div.user-img {
+}
+
+aside ul.flow li p {
+  font-size: 12px;
+  padding-left: 6px;
+  letter-spacing: -0.3px;
+}
+aside ul.flow li p b {
+  font-weight: 600;
+  display: block;
+  padding-bottom: 3px;
+  font-size: 14px;
+}
+aside ul.flow li p span {
+}
+aside ul.flow li button {
+  height: 35px;
+  margin-left: auto;
+  border-radius: 21px;
+  padding: 10px 15px;
+}
+
+.search-filter-wrap h3 {
+  margin-bottom: 12px;
+}
+.search-filter-wrap h3,
+.search-filter {
+  border-radius: 20px;
+  border: 1px solid #eee;
+  padding: 9px;
+}
+.search-filter label {
+  display: block;
+  padding: 6px 0px;
+}
+
+/* explore PAGE ---------- */
+
+.explore-wrap {
+}
+.explore-wrap div.search {
+  background-color: #eee;
+  margin-top: 12px;
+}
+.explore-wrap ul.flow,
+.explore-wrap ul.trand {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-radius: 0px;
+}
+.explore-wrap ul.flow h3,
+.explore-wrap ul.trand h3 {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 21px;
+}
+.explore-wrap ul.trand li {
+  height: 66px;
+}
+.explore-wrap ul.trand li span {
+  font-size: 12px;
+  display: block;
+  color: #686868;
+}
+.explore-wrap ul.trand li b {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 6px 0px 6px 0px;
+}
+.explore-wrap .search-wrap {
+  padding: 9px 9px 0px 9px;
+}
+
+/* profile PAGE ---------- */
+
+.my-profile-wrap {
+}
+.my-profile-wrap .profile {
+  height: 120px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+  padding: 0px 12px 0px 12px;
+}
+
+.my-profile-wrap .profile .user-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  margin-right: 9px;
+}
+.my-profile-wrap .profile p.info {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-right: auto;
+}
+.my-profile-wrap .profile button {
+  margin-right: 0px;
+  height: 35px;
+}
+.my-profile-wrap .profile p.info b,
+.my-profile-wrap .profile p.info span {
+  display: block;
+}
+.my-profile-wrap .profile:hover {
+  background-color: transparent;
+}
+.my-profile-wrap .input-write {
+  margin-top: 0px;
+  border-bottom: 1px solid #eee;
+}
+/* back-button */
+p.back-area {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  display: flex;
+}
+p.back-area h3 {
+  display: inline-block;
+  font-size: 20px;
+  font-wieght: 400;
+}
+
+button.btn-back {
+  background: transparent;
+  color: #333;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button.btn-back svg {
+}
+button.btn-back:hover {
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* search PAGE ------------ */
+
+.search-page-wrap {
+}
+.search-page-wrap .search-wrap {
+  margin-top: 9px;
+  padding: 0px 9px 0px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* */
+.link-tab-wrap > .btns {
+  /* border-bottom: 1px solid #eee; */
+}
+
+/* messages PAGE ------------ */
+.msg-detail-wrap h3,
+.msg-wrap h3 {
+  font-size: 20px;
+  padding: 9px;
+  margin-bottom: 12px;
+}
+ul.msg-list {
+  border-top: 1px solid #eee;
+}
+ul.msg-list li {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-bottom: 1px solid #eee;
+}
+ul.msg-list li:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+ul.msg-list li div.user-img {
+  margin: 0px 12px;
+}
+ul.msg-list li div.user-info p {
+  padding: 3px 0px;
+}
+ul.msg-list li div.user-info p.desc {
+  font-size: 14px;
+  color: #686868;
+}
+ul.msg-list li div.user-info p b {
+  font-weight: 600;
+  padding-right: 6px;
+}
+ul.msg-list li div.user-info p span {
+  padding-right: 6px;
+}
+
+/* messages Detail PAGE ------------ */
+
+.msg-detail-wrap {
+  padding: 0px 12px;
+}
+.msg-detail-wrap .profile-other {
+  height: 120px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 12px;
+}
+.msg-detail-wrap .profile-other .user-img {
+  margin-bottom: 9px;
+}
+.msg-detail-wrap .profile-other p b {
+  display: block;
+}
+
+.msg-detail {
+}
+.msg-detail li {
+  height: auto;
+  margin-bottom: 18px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.msg-detail li div.msg-box {
+  padding: 12px;
+  background-color: #54a7ff;
+  width: auto;
+  border-radius: 18px 18px 18px 0px;
+}
+.msg-detail li div.msg-box p {
+  color: #fff;
+  line-height: 20px;
+}
+.msg-detail li p.msg-info {
+  padding-top: 3px;
+}
+.msg-detail li p.msg-info span {
+  color: #686868;
+  font-size: 12px;
+}
+
+.msg-detail li.you {
+  align-items: start;
+  padding-right: 60px;
+}
+.msg-detail li.me {
+  align-items: end;
+  padding-left: 60px;
+}
+.msg-detail li.me div.msg-box {
+  border-radius: 18px 18px 0px 18px;
+}
+.msg-detail li.me div.msg-box {
+  background-color: #cdcdcd;
+}
+.msg-detail li.me div.msg-box p {
+  color: #333;
+}
