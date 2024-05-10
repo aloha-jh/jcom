@@ -15,7 +15,6 @@ type Props = {
   };
 };
 export default function LinkTab({ params }: Props) {
-  const onClickLinkTab = (tab: string) => {};
   console.log(params);
   const slted = params.tab;
   const query = params.q;
